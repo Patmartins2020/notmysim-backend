@@ -1,0 +1,34 @@
+{
+  "name": "notmysim-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "prisma:dev": "prisma migrate dev --name init",
+    "prisma:studio": "prisma studio",
+    "seed": "node prisma/seed.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "@prisma/client": "^5.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^17.7.0",
+    "eslint-plugin-promise": "^6.5.1",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.18.0"
+  }
+}
